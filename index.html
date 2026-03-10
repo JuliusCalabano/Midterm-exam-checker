@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc_YKVCOxQ69w5cY6Blpz8cxHdW8xYLRw610uhfDFI9qxJ0ng/formResponse"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="submitted()">
+
+        <label>Block Number</label>
+        <input type="text" name="entry.343796043" required>
+
+        <label>Name</label>
+        <input type="text" name="entry.1861099868" required>
+
+        <label>Task 1 - Score: 10 pts</label>
+        <input type="text" name="entry.761655872" required>
+
+        <label>Task 2 - Score: 30 pts</label>
+        <input type="text" name="entry.2089332679">
+
+        <label>Task 3 - Score: 20 pts</label>
+        <input type="text" name="entry.1144223003">
+
+        <label>Task 4 - Score: 20 pts</label>
+        <input type="text" name="entry.1514927482">
+
+        <label>Task 5 - Score: 20 pts</label>
+        <input type="text" name="entry.828073732">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <p id="msg" style="display:none;color:green;">
+    ✅ Response Submitted!
+    </p>
+
+<script>
+function submitted(){
+ document.getElementById("msg").style.display="block";
+}
+</script>
+</body>
+</html>
+
